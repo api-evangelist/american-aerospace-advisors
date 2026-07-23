@@ -1,8 +1,25 @@
 aid: american-aerospace-advisors
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/american-aerospace-advisors.png
 name: American Aerospace Advisors
-description: American Aerospace Advisors is a company surfaced as a portfolio company of 500-global and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: American Aerospace Technologies, Inc., doing business as American Aerospace Advisors, is
+  a defense and critical-infrastructure monitoring company based in Conshohocken, Pennsylvania. It provides
+  end-to-end airborne intelligence systems that combine unmanned aircraft systems (UAS), airborne sensors,
+  analytics, and communications to deliver near-real-time data through a cloud-based intelligence gateway.
+  Its flagship AiRanger medium-altitude long-endurance unmanned aircraft and InstiMaps sensor technology
+  support pipeline and linear-asset patrol, beyond-visual-line-of-sight (BVLOS) flight services, sensor
+  integration, and aviation policy consulting. As of this enrichment pass the company publishes no public
+  developer API, developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/american-aerospace-advisors/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Aerospace
+- Defense
+- Unmanned Aircraft Systems
+- Drones
+- Infrastructure Monitoring
+- Geospatial
+- Sensors
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/american-aerospace-advisors-domain-security.yml
 - type: Website
   url: https://americanaerospace.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
